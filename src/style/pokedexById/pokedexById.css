@@ -1,0 +1,183 @@
+.pokemonbyid_container{
+    background-color: #242424;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/* titulo e imagen */
+.pokemonbyid_container_title_img{
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.pokemonbyid_tittle_name{
+    text-transform: capitalize;
+    text-shadow: 30px 8px 12px black;
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.pokemonbyid_img_default{
+    height: 60px;
+}
+.pokemonbyid_img_official{
+    position: absolute;
+    top: 23%;
+    width: 230px;
+    filter: drop-shadow(20px 1px 10px rgba(0, 0, 0, 0.6));
+    transition: all 0.9s ease-out;
+    z-index: 1;
+}
+.pokemonbyid_img_official:hover {
+    transform: scale(1.2);
+    transition: all 0.9s ease-out;
+    filter: brightness(1.1);
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.6));
+}
+
+/* info */
+.pokemonbyid_container_info{
+    text-transform: capitalize;
+    border-radius: 10px;
+    background: linear-gradient(rgba(54, 54, 54, 0.123), rgb(27, 27, 27) );
+    backdrop-filter: blur(20px);
+    max-width: 1100px;
+    box-shadow: 6px 22px 20px -1px rgb(0, 0, 0),
+    -5px -5px 10px -5px rgba(92, 92, 92, 0.89);
+}
+.pokemonbyid_containter_type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 0;
+}
+.pokemonbyid_type{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:  6px 22px 20px -1px rgb(0, 0, 0);
+    margin-top: 60px;
+}
+.pokemonbyid_type:hover{
+    transition: all 0.9s ease-out;
+    filter: brightness(1.4);
+}
+.pokemonbyid_containter_ability{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pokemonbyid_heigth, .pokemonbyid_weight{
+    margin-top: 80px;
+    font-size: 14px;
+}
+.pokemonbyid_ability, .pokemonbyid_heigth, .pokemonbyid_weight{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(46, 45, 45, 0.61);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom:20px;
+    box-shadow: 6px 10px 20px -1px rgb(0, 0, 0);
+}
+.pokemonbyid_weight_title{
+    color: rgb(170, 170, 170);
+}
+.second_number{
+    display: none;
+}
+
+/* stats */
+.stats{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.pokemonbyid_title_stats{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+.pokemonbyid_title_stats{
+    padding-top: 20px;
+    font-size: 28px;
+}
+.pokemonbyid_container_stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pokemonbyid_stats_title{
+    background-color: rgba(26, 26, 26, 0.596);
+    width: 70%;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 15px;
+    box-shadow:  -5px -5px 10px -5px rgba(92, 92, 92, 0.89);
+    text-align: left;
+    padding-left: 20px;
+}
+.pokemonbyid_stats {
+    background-color: rgba(141, 141, 141, 0.473);
+    width: 70%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 6px 10px 20px -1px rgb(0, 0, 0);
+}
+
+.stats_percentage {
+    color: white;
+    padding: 0.6%;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 100%
+}
+
+/* moves */
+.moves{
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+}
+.pokemonbyid_title_moves{
+    padding-top: 20px;
+    font-size: 28px;
+}
+.pokemonbyid_moves{
+    background-color: rgba(158, 157, 157, 0.151);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: aliceblue;
+    margin:0;
+    box-shadow: 6px 10px 20px -1px rgb(0, 0, 0);
+    transition: all 0.9s ease-out;
+}
+.pokemonbyid_moves:hover{
+    transform: scale(1.5);
+    transition: all 0.9s ease-out;
+    filter: brightness(1.1);
+}
+
+/* boton de salida */
+.button_exit{
+    position: absolute;
+    top:13%;
+    left: 5%;
+    font-size: 30px;
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+}

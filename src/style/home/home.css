@@ -1,0 +1,83 @@
+.card_home_container {
+    position: relative;
+    background-image: url(https://external-preview.redd.it/EG7bjGp5PDvZ8golrKh3m84n-A9khC5jDE-hqqoVfvA.png?format=pjpg&auto=webp&s=3d441c3774c597cd0136e9634303ef86c0d8677a);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_home_img{
+    height: 200px;
+}
+.card_home_title{
+    position: absolute;
+    top:-40px;
+    height: 300px;
+}
+.card_home{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow:  6px 6px 10px -1px rgb(248, 248, 248),
+    -6px -6px 10px -1px rgba(243, 8, 8, 0.89);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.card_home:hover{
+    box-shadow:
+    6px 6px 10px -1px rgb(248, 248, 248),
+    -6px -6px 10px -1px rgba(243, 8, 8, 0.89),
+    inset 6px 6px 20px -1px #ffffff50,
+    inset -6px -6px 20px -1px #09424669;
+}
+.card_home_form_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.card_home_info{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.card_home_input{
+    outline: none;
+    border:none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(224, 143, 143, 0.6);
+    color: white;
+    font-weight: 600;
+}
+.card_home_input::placeholder{
+    color:  rgb(230, 178, 178);
+}
+.card_home_button{
+    border-radius: 8px;
+    background: #ca3131;
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(255, 255, 255);
+    box-shadow:  inset 6px 6px 20px -1px #e09191,
+        inset -6px -6px 20px -1px #e00b0bb4;
+}
+.card_home_button:hover{
+    transform: scale(1.03);
+    transition: transform 100ms ease;
+    filter: brightness(1.1);
+}
+.title{
+    color: rgb(0, 0, 0);
+}
+.phrase{
+    color: white;
+}

@@ -1,0 +1,12 @@
+.pokemonerror_container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images4.alphacoders.com/661/661563.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

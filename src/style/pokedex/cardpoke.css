@@ -1,0 +1,226 @@
+.pokemon_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 30px;
+    max-width: 1000px;
+}
+.card_pokemon_container{
+    position: relative;
+    width: 220px;
+    height: 380px;
+    border-radius: 10%;
+    box-shadow:  6px 22px 20px -1px rgb(0, 0, 0);
+    transition: all 0.7s ease-out;
+    cursor: pointer;
+}
+.card_number_pokemon{
+    box-shadow:  6px 22px 20px -1px rgb(0, 0, 0);
+    position: absolute;
+    top:8%;
+    left: -7%;
+    padding: 2px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1;
+}
+.card_name_pokemon{
+    position: absolute;
+    text-transform: capitalize;
+    top:0;
+    left:-10px;
+    text-shadow: 20px 15px 12px black;
+    transition: all 0.9s ease-out;
+}
+.card_pokemon_img{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+.pokemon_img{
+    position: absolute;
+    top: 5%;
+    width: 150px;
+    transition: all 0.9s ease-out;
+    text-decoration: dashed;
+    filter: drop-shadow(20px 1px 10px rgba(0, 0, 0, 0.6));
+    z-index: 2;
+}
+.card_pokemon_container:hover{
+    transform: scale(1.07);
+    transition: all 0.5s ease-out;
+    box-shadow: 6px 22px 20px -1px rgb(0, 0, 0),
+    -5px -5px 10px -5px rgba(92, 92, 92, 0.89);
+}
+.card_pokemon_container:hover .pokemon_img{
+    transform: scale(1.3);
+    transition: all 0.9s ease-out;
+    filter: brightness(1.1);
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.6));
+}
+.card_pokemon_container:hover .card_name_pokemon{
+    transform: scale(1.9);
+    transition: all 0.9s ease-out;
+    filter: brightness(1.1);
+}
+.card_name_pokemon:hover{
+    transition: all 0.1s ease-out;
+    z-index: 4;
+}
+.card_pokemon_info{
+    border-radius: 10%;
+    background: linear-gradient(rgba(105, 105, 105, 0.2), rgb(48, 47, 47) );
+    backdrop-filter: blur(20px);
+    height: 250px;
+}
+.card_list_type_container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card_list_type{
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 30px;
+}
+.card_list_type:nth-child(2)::before{
+    content: "/";
+    position: absolute;
+    left: -10px;
+}
+.card_list_stats_container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    text-transform:uppercase ;
+    justify-content: center;
+    text-align: center;
+    gap:7px
+}
+.card_list_stats{
+    display: flex;
+    flex-direction: column;
+}
+.card_list_stats_name{
+    color: rgb(204, 202, 202);
+    font-size: 14px;
+    /* font-family: none; */
+}
+.card_list_stats_number{
+    font-size: 14px;
+}
+
+/* background for type */
+
+.grass {
+    background: radial-gradient(rgba(154, 201, 144, 0.637), rgb(50, 173, 111), rgba(27, 184, 35, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.fire{
+    background: radial-gradient(rgba(201, 170, 144, 0.705), rgb(168, 126, 48), rgba(194, 99, 35, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.water{
+    background: radial-gradient(rgba(144, 175, 201, 0.616), rgb(48, 123, 173), rgba(24, 119, 182, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.normal{
+    background: radial-gradient(rgb(157, 162, 163), rgb(130, 132, 133), rgba(147, 149, 151, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.flying{
+    background: radial-gradient(rgba(144, 201, 198, 0.685), rgb(45, 154, 161), rgba(26, 177, 164, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.poison{
+    background: radial-gradient(rgba(171, 144, 201, 0.699), rgb(135, 53, 173), rgba(138, 35, 179, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.ground{
+    background: radial-gradient(rgba(201, 157, 144, 0.658), rgb(122, 100, 62), rgba(124, 98, 52, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.rock{
+    background: radial-gradient(rgba(200, 201, 144, 0.767), rgb(129, 123, 99), rgba(131, 124, 95, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.bug{
+    background: radial-gradient(rgba(181, 201, 144, 0.678), rgb(125, 173, 48), rgba(127, 182, 24, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.ghost{
+    background: radial-gradient(rgba(175, 144, 201, 0.425), rgba(123, 48, 173, 0.342), rgba(106, 24, 182, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.steel{
+    background: radial-gradient(rgba(144, 164, 201, 0.425), rgba(48, 117, 173, 0.493), rgba(24, 98, 182, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.electric{
+    background: radial-gradient(rgba(200, 201, 144, 0.568), rgba(207, 204, 15, 0.603), rgba(187, 199, 21, 0.452),rgba(0, 0, 0, 0.01) );
+}
+.psychic{
+    background: radial-gradient(rgba(179, 125, 142, 0.562), rgba(173, 48, 85, 0.493), rgba(182, 24, 85, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.ice{
+    background: radial-gradient(rgba(138, 172, 177, 0.61), rgba(90, 154, 170, 0.712), rgba(81, 154, 167, 0.63),rgba(0, 0, 0, 0.01) );
+}
+.dragon{
+    background: radial-gradient(rgba(144, 145, 201, 0.534), rgb(48, 56, 173), rgba(27, 24, 182, 0.3),rgba(0, 0, 0, 0.01) );
+}
+.dark{
+    background: radial-gradient(rgba(70, 70, 75, 0.986), rgb(62, 62, 68), rgba(43, 43, 48, 0.582),rgba(0, 0, 0, 0.01) );
+}
+.fairy{
+    background: radial-gradient(rgba(182, 122, 184, 0.76), rgba(182, 89, 160, 0.808), rgba(196, 58, 178, 0.411),rgba(0, 0, 0, 0.01) );
+}
+.fighting{
+    background: radial-gradient(rgba(160, 111, 127, 0.719), rgba(173, 48, 54, 0.747), rgba(182, 24, 45, 0.3),rgba(0, 0, 0, 0.01) );
+}
+
+/* backgorud number pokemon */
+
+.grass_number {
+    background: rgb(71, 173, 50)
+}
+.fire_number{
+    background: rgb(168, 126, 48)
+}
+.water_number{
+    background: rgb(48, 123, 173)
+}
+.normal_number{
+    background: rgb(124, 128, 124)
+}
+.flying_number{
+    background: rgb(45, 154, 161)
+}
+.poison_number{
+    background: rgb(135, 53, 173)
+}
+.ground_number{
+    background:rgb(122, 100, 62)
+}
+.rock_number{
+    background: rgb(129, 123, 99)
+}
+.bug_number{
+    background: rgb(125, 173, 48)
+}
+.ghost_number{
+    background: rgba(123, 48, 173, 0.342)
+}
+.steel_number{
+    background: rgba(48, 117, 173, 0.493)
+}
+.electric_number{
+    background: rgba(207, 204, 15, 0.603)
+}
+.psychic_number{
+    background: rgba(173, 48, 85, 0.493)
+}
+.ice_number{
+    background: rgba(90, 154, 170, 0.712)
+}
+.dragon_number{
+    background: rgb(48, 56, 173)
+}
+.dark_number{
+    background: rgb(62, 62, 68)
+}
+.fairy_number{
+    background: rgba(182, 89, 160, 0.808)
+}
+.fighting_number{
+    background: rgba(173, 48, 54, 0.747)
+}
